@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pixel-Grid Text Share</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- CryptoJS (AES) & LZ-String (compress) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+</head>
+<body>
+
+  <div class="controls">
+    <input id="text" placeholder="พิมพ์ข้อความของคุณ…" />
+    <button id="btn">Show</button>
+    <button id="copy" disabled>Copy Link</button>
+    <span id="copied" class="copied hidden">Copied ✓</span>
+  </div>
+
+  <div id="grid" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
